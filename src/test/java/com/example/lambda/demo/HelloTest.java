@@ -18,14 +18,14 @@ public class HelloTest {
     @BeforeClass
     public static void createInput() throws IOException {
         // TODO: set up your sample input object here.
-        input = null;
+        input = "{\"key\":\"value\"}";
     }
 
     private Context createContext() {
         TestContext ctx = new TestContext();
 
         // TODO: customize your context here if needed.
-        ctx.setFunctionName("Your Function Name");
+        ctx.setFunctionName("HelloLambda");
 
         return ctx;
     }
@@ -38,6 +38,6 @@ public class HelloTest {
         String output = handler.handleRequest(input, ctx);
 
         // TODO: validate output here if needed.
-        Assert.assertEquals("Hello from Lambda!", output);
+        Assert.assertEquals("Hello4 {\"key\":\"value\"}", output);
     }
 }

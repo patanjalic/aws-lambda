@@ -38,6 +38,6 @@ public class HelloTest {
         String output = handler.handleRequest(input, ctx);
 
         // TODO: validate output here if needed.
-        Assert.assertEquals("Hello3 {\"key\":\"value\"}", output);
+        Assert.assertEquals("Hello4 {\"key\":\"value\"}", output);
     }
 }
